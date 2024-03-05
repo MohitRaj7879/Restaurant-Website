@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title> Buffet Booking</title>
+    <style>
+
+    </style>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), #3551b5), url("logo.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .input-group {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        font-size: 15px;
+    }
+
+    .input-group1{
+        display: flex;
+    }
+
+    label {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        color: #fff;
+        cursor: text;
+        transition: 0.2s;
+    }
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label {
+        top: -35px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 0;
+        color: #fff;
+        outline: none;
+        background: transparent;
+        border: 1px solid #fff;
+        width: 100%;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+    <div class="hero">
+        <form>
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="number" required>
+                <label for="number">Contact No. (whatsapp preferred)</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email Id</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="Event-Type" required>
+                <label for="text">Occasion</label>
+            </div>
+
+            <div class="input-group 1">
+                <p>Decoration Type</p>
+                <label for="Decoration"></label>
+                <select name="Decor" id="Decoration">
+                    <option value="select"></option required>
+                    <option value="Flower"> Flower Decoration (5000+GST)</option>
+                    <option value="Balloon"> Balloon Decoration (2500+GST) </option>
+                    <option value="N/A"> No Need of Decoration</option>
+                </select>
+
+                <p>Guest Estimation</p>
+                <label for="Guest"></label>
+                <select name="Guest estimation" id="Guest">
+                    <option value="select"></option required>
+                    <option value="One">1-50</option>
+                    <option value="Two">50-100</option>
+                    <option value="Three">100-150</option>
+                    <option value="Four">150-200</option>
+                    <option value="Five">More Than 200</option>
+                </select>
+
+                <p>Platter Type</p>
+                <label for="Platter"></label>
+                <select name="Plate" id="Platter">
+                    <option value="select"></option required>
+                    <option value="Veg">VEG- 599/plate</option>
+                    <option value="Non-Veg">NON-Veg 899/plate</option>
+                </select>
+            </div>
+
+            
+
+
+            <!-- <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message">Message</label>
+            </div> -->
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

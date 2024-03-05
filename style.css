@@ -1,0 +1,264 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+  body{
+    font-family: "Spline Sans",sans-serif;
+    color: #777;
+    line-height: 1.7;
+    /* background-color: red; */
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: wheat;
+  }
+
+  .divider{
+    justify-content: end;
+  }
+  a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+  }
+
+  a:hover{
+    color:burlywood;
+  }
+
+  img{
+    min-width: 100%;
+  }
+
+  .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+  }
+
+  .btn-brand{
+    background-color: orange;
+    color: rgb(2, 2, 20);
+    font-weight: 500;
+    border-color: orange;
+    background-color: orange;
+  }
+
+  .btn-brand:hover{
+    border-color: orange;
+    background-color: rgb(255, 255, 255);
+  }
+.bg-cover{
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.slide-1{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pexels-fox-750843.jpg);
+}
+
+.slide-2{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pexels-andie-venzl-2418920.jpg);
+}
+
+.slide-3{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pexels-dan-cristian-pădureț-1485806.jpg);
+}
+
+#carouselExample h6::after
+#carouselExample h6::before{
+  content: " ";
+  width: 40px;
+  height: 70px;
+  margin:auto;
+  background-color: white;
+  display: inline-block;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  background-color: rgba(0,0,0,0.6);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+section{
+  padding-top: 120px;
+  padding: 14px 38px;
+}
+
+/* About */
+#about .divider{
+width: 60px;
+height: 2px;
+display: block;
+background-color: #f58d17;
+text-align: justify; 
+}
+
+/* Intro text */
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.intro-text p{
+  max-width: 500px;
+  margin: 16px auto;
+}
+
+/* Menu */
+#menu .nav-pills .nav-link{
+  background-color: grey;
+  margin-left: 8px;
+  margin-right: 8px;
+  color:black;
+  text-size-adjust: 30px;
+  border-radius: 100px;
+}
+
+#menu .nav-pills .nav-link.active{
+  background-color: #f58d17;
+  color: bisque;
+  text-shadow: #777;
+}
+
+.menu-item-content.stars{
+  color: #f58d17;
+}
+
+.shadow-on-hover{
+  transition: all 0.3s;
+}
+
+.shadow-on-hover:hover{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Features */
+#Features{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Features-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.feature{
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature .feature-icon{
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  font-size: 34px;
+  display: inline-grid;
+}
+
+#Features{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Features-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+#reviews{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Meeting.jpg);
+}
+
+.reviews .quote-icon{
+  font-size: 75px;
+  color: #f58d17;
+  line-height: 1;
+}
+
+.reviews .person{
+  font-size: 50px;
+}
+
+.reviews .stars{
+  color: #f58d17;
+}
+
+.insta-post{
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.insta-post .insta-btn{
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.insta-post img{
+  transition: all 0.4s;
+  height: 200px;
+  width: 200px;
+}
+
+.insta-post:hover img{
+  transform: scale(1.1);
+}
+
+.insta-post:hover .insta-btn{
+  opacity: 1;
+}
+
+/* Footer */
+footer{
+  height: 320px;
+  background: #7e7272;
+  padding: 50px;
+  padding-bottom: 30px;
+  justify-content: end;
+}
+.media{
+  margin-top: 10px;
+}
+.media>a{
+  margin: 10px 0;
+  padding: 2px;
+}
+.logo1>img{
+ height: 100px;
+ width: 100px;
+ border-radius: 10px;
+}
+.footer-row{
+  width: 50%;
+  
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer p{
+  font-weight: normal;
+  margin-right: 1px;
+}
+
+footer img{
+  max-width: 125px;
+}
+
+footer-top{
+  size: 40px;
+}
+.footer-bottom{
+  color: #f58d17;
+  height: 100px;
+  
+}
